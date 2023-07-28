@@ -32,3 +32,10 @@ person = {
 person ={
     name:7 //will give error
 }
+
+// Type inference
+const val = "string"
+
+
+val = 32 // will give error through we didn't menetioned the type that is because
+// typescript using type inference will take the type of the varible as the initial assigned value
