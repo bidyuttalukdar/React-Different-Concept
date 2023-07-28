@@ -2,6 +2,6 @@ function addT(a:number, b:number) {
     return a + b;
 }
   
-const result = addT(2, 5);
+let result1:any = addT(2, 5);
 
-console.log(result);
+console.log(result1);

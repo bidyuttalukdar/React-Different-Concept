@@ -1,0 +1,34 @@
+// Basic type
+number // not Number->Number class
+string
+boolean 
+null and undefined we dont normally used to assign type
+
+Example:
+let value:number = 4
+let str:string = "n"
+let isValid = true
+
+
+// Complex type 
+array
+object
+
+Example:
+let name = ["ab","qw"]
+
+//assgining object
+let person : {   // not =
+    name:string;
+    age:number;
+}
+
+
+person = {
+    name :"Max",
+    age:45
+}
+
+person ={
+    name:7 //will give error
+}
