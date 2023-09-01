@@ -16,7 +16,7 @@ object
 
 Example:
 let name = ["ab","qw"]
-
+let name : string[];
 //assgining object
 let person : {   // not =
     name:string;
@@ -32,10 +32,59 @@ person = {
 person ={
     name:7 //will give error
 }
-
+//--------------------------------------
 // Type inference
+
 const val = "string"
 
 
 val = 32 // will give error through we didn't menetioned the type that is because
 // typescript using type inference will take the type of the varible as the initial assigned value
+
+//--------------------------------------
+// Union type
+const ab string | number = "nom"
+ab = 12  //correct
+
+
+//---------------------------------------
+// Type alias
+
+type Person = {
+    name : string,
+    value : number
+}
+let person : Person
+
+person = {
+    name :"nmka",
+    value:4
+}
+
+
+//--------------------------------------
+// Function & type
+function add(a:number, b:number) : number {
+    return a+b
+}
+
+function add(a:number, b:number) : number | string | void | any {
+    ...
+}
+
+
+void means will not return anything
+//------------------------------------------------------------
+//Generic
+
+function div<T> (arr:array(T),b:T){
+    return [n,...arr]
+}
+
+div([[1,2,3],4) //result : [1,2,3,4]
+div(["z","x","c"],"v") //[z,x,c,v]
+
+
+
+
+//
